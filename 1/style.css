@@ -1,0 +1,22 @@
+h2{
+    text-align: center;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: crimson;
+    margin: auto;
+    border: 10px solid cornflowerblue;
+}
+
+
+.section1 .box{
+    border-radius: 50%;
+}
+
+
+.section2 .box{
+    border-radius: 10px;
+    padding: 20px;
+}

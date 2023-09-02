@@ -1,0 +1,48 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.wallpaper{
+    height: 800px;
+    background-color: #ddd;
+    background-image: url(img/fanos.png);
+    background-repeat: no-repeat;
+}
+
+
+
+
+.section1 .wallpaper{
+    background-position: top left;
+}
+
+
+.section2 .wallpaper{
+    background-position: bottom right;
+}
+
+
+
+
+.section3 .wallpaper{
+    background-position: center center;
+}
+
+
+
+
+.section4 .background-cover{
+    height: 800px;
+    background-color: #ddd;
+    background-image: url(img/blog-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgb(0, 255, 161);
+    overflow: auto;
+}

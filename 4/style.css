@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.planets{
+    padding: 50px 0;
+    background-image: url(img/footer_bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+
+
+.planets .planet {
+    width: 32%;
+    text-align: center;
+}   
+
+.planets .planet img{
+    width: 100%;
+}

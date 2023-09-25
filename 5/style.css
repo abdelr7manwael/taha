@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+section{
+    padding: 50px 0;
+}
+
+.title{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h1, h2, h3, h4{
+    color :#012970;
+}
+
+.title p{
+    color: #4154f1;
+}
+
+.team .member{
+    width: 24%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+}
+
+.team .member img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.team .member .grey{
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.team .member .info{
+    padding: 0 40px;
+    font-style: italic;
+    margin-bottom: 20px;
+}

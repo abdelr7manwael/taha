@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .container{
@@ -59,6 +60,52 @@ a:hover,
     color: #ff7a57;
 }
 
+
+.w-50{
+    width: 48%;
+}
+
+
+
+.btn-dark{
+    background-color: #343a40;
+    border: 1px solid #343a40;
+    color: white;
+}
+
+.btn-dark:hover{
+    background-color: white;
+    border: 1px solid #343a40;
+    color: #343a40;
+}
+
+.my-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icons i{
+    font-size: 20px;
+    color: #ff7a57;
+    border: 1px solid #ff7a57;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icons i:hover{
+    color: white;
+    background-color: #ff7a57;
+}
+
 /* ---------------------------------------------- */
 body{
     height: 500000px;
@@ -68,9 +115,10 @@ nav{
     box-shadow: 0 4px 8px 0 rgba(128, 128, 128, 0.3);
     padding: 10px 0;
 
-    position: fixed;
+    position: fixed;  
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 nav img{
@@ -83,4 +131,31 @@ nav ul{
     display: flex;
     gap: 0 10px;
     margin-right: 10px;
+}
+
+/* --------------------------------------- */
+main{
+    padding-top: 65px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+main .d-flex{
+    height: 75vh; /*view height*/
+    
+}
+
+main img{
+    width: 620px;
+    align-self: flex-end;
+}
+
+main p{
+    font-size: 30px;
+    opacity: 65%;
+}
+
+main h2{
+    font-size: 50px;
+    opacity: 75%;
 }

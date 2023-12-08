@@ -106,6 +106,12 @@ a:hover,
     background-color: #ff7a57;
 }
 
+
+
+.img-div img{
+    width: 100%;
+}
+
 /* ---------------------------------------------- */
 body{
     height: 500000px;
@@ -158,4 +164,47 @@ main p{
 main h2{
     font-size: 50px;
     opacity: 75%;
+}
+/* ------------------------------------------------ */
+
+.widget{
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    padding: 20px 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    box-shadow:  0 0 20px 10px rgba(128, 128, 128, 0.3);
+    transform: translateY(-50%);
+}
+
+
+.widget p{
+    opacity: 60%;
+}
+
+.widget .number{
+    opacity: 80%;
+}
+
+/* --------------------------------------------- */
+
+.cv .img-div{
+    width: 29%;
+}
+
+.cv .text-div{
+    width: 69%;
+}
+
+.cv img{
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.cv .job{
+    opacity: 60%;
 }

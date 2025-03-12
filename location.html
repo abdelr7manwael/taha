@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Geolocation with Google Maps Link</title>
+</head>
+<body>
+
+<button id="getLocationBtn">Get My Location</button>
+
+<p id="locationDisplay"></p>
+<p id="mapLink"></p>
+
+<script>
+document.getElementById('getLocationBtn').addEventListener('click', getLocation);
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else {
+    document.getElementById('locationDisplay').innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  document.getElementById('locationDisplay').innerHTML = "Latitude: " + latitude + "<br>Longitude: " + longitude;
+
+  const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
+  document.getElementById('mapLink').innerHTML = `<a href="${googleMapsLink}" target="_blank">Open in Google Maps</a>`;
+}
+
+function showError(error) {
+  let locationDisplay = document.getElementById('locationDisplay');
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      locationDisplay.innerHTML = "User denied the request for Geolocation.";
+      break;
+    case error.POSITION_UNAVAILABLE:
+      locationDisplay.innerHTML = "Location information is unavailable.";
+      break;
+    case error.TIMEOUT:
+      locationDisplay.innerHTML = "The request to get user location timed out.";
+      break;
+    case error.UNKNOWN_ERROR:
+      locationDisplay.innerHTML = "An unknown error occurred.";
+      break;
+  }
+}
+</script>
+
+</body>
+</html>
